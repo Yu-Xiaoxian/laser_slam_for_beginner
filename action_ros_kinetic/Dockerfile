@@ -11,8 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
 FROM ros:kinetic
 
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ADD entrypoint.sh /sandbox/entrypoint.sh
+RUN chmod +x /sandbox/entrypoint.sh
+ENTRYPOINT ["/sandbox/entrypoint.sh"]
