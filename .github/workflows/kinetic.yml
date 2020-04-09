@@ -1,0 +1,10 @@
+name: Workflow for ros[kinetic] test
+on: push
+
+jobs:
+  build:
+    name: ROS test
+    runs-on: ubuntu-latest    
+    steps:
+    - uses: actions/checkout@master
+    - uses: ./action_ros_kinetic
