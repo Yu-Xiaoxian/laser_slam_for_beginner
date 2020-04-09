@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
+    - run: cp scripts/entrypoint.sh actions/kinetic/entrypoint.sh
     - uses: ./actions/kinetic
       
   build_melodic:
@@ -19,4 +20,5 @@ jobs:
     runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
+    - run: cp scripts/entrypoint.sh actions/melodic/entrypoint.sh
     - uses: ./actions/melodic

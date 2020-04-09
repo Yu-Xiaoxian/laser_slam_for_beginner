@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # add ROS enviroment variables
-source "/opt/ros/kinetic/setup.bash"
+source "/opt/ros/${ROS_DISTRO}/setup.bash"
 
 cd catkin_ws
 catkin_make
