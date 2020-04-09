@@ -20,5 +20,5 @@ jobs:
     runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
-    - run: cp scripts/entrypoint.sh actions/kinetic/entrypoint.sh
+    - run: cp scripts/entrypoint.sh actions/melodic/entrypoint.sh
     - uses: ./actions/melodic
