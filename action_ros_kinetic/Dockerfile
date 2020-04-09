@@ -13,6 +13,8 @@
 # limitations under the License.
 FROM ros:kinetic
 
+RUN git clone -b master https://github.com/yu-xiaoxian/laser_slam_for_beginner.git /
+
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
