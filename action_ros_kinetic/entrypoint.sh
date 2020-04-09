@@ -14,6 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# perapare
 ./opt/ros/kinetic/setup.sh
 
 source "/opt/ros/kinetic/setup.bash"
