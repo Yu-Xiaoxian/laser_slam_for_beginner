@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
-    - run: pwd && ls -ls && ls -ls ../
     - run: cp scripts/entrypoint.sh actions/kinetic/entrypoint.sh
     - uses: ./actions/kinetic
       
@@ -21,4 +20,5 @@ jobs:
     runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
+    - run: cp scripts/entrypoint.sh actions/kinetic/entrypoint.sh
     - uses: ./actions/melodic
