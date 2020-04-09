@@ -16,6 +16,6 @@ jobs:
 
     steps:
     - name: build on ros dist ${{matrix.ros-dist}}
-    - uses: actions/checkout@master
+      uses: actions/checkout@master
     - run: cp scripts/entrypoint.sh actions/${{matrix.ros-dist}}/entrypoint.sh
     - uses: ./actions/${{matrix.ros-dist}}
