@@ -6,6 +6,7 @@ on:
     branches: [ master ]
 
 jobs:
+
   build_kinetic:
     name: build_in_kinetic
     runs-on: ubuntu-latest    
