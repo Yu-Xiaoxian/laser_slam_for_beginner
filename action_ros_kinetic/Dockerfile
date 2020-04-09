@@ -17,5 +17,7 @@ RUN git clone https://github.com/Yu-Xiaoxian/laser_slam_for_beginner.git /sandbo
 
 ADD entrypoint.sh /sandbox/entrypoint.sh
 RUN chmod +x /sandbox/entrypoint.sh
+RUN ls -l /bin/sh
+RUN ln -s /bin/bash /bin/sh
 RUN ls /sandbox && cd /sandbox/catkin_ws/ && source "/opt/ros/kinetic/setup.bash" && catkin_make && cd /
 ENTRYPOINT ["/sandbox/entrypoint.sh"]
