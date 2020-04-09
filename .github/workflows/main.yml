@@ -7,15 +7,18 @@ on:
 
 jobs:
 
-  build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        ros-dist: [kinetic, melodic]
-
+  build_kinetic:
+    name: build_in_kinetic
+    runs-on: ubuntu-latest    
     steps:
-    - name: build on ros dist ${{matrix.ros-dist}}
-      uses: actions/checkout@master
-    - run: cp scripts/entrypoint.sh actions/${{matrix.ros-dist}}/entrypoint.sh
-    - uses: ./actions/${{matrix.ros-dist}}
+    - uses: actions/checkout@master
+    - run: cp scripts/entrypoint.sh actions/kinetic/entrypoint.sh
+    - uses: ./actions/kinetic
+      
+  build_melodic:
+    name: build_in_melodic
+    runs-on: ubuntu-latest    
+    steps:
+    - uses: actions/checkout@master
+    - run: cp scripts/entrypoint.sh actions/melodic/entrypoint.sh
+    - uses: ./actions/melodic
