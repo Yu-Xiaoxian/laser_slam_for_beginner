@@ -11,7 +11,7 @@ jobs:
     name: build_in_kinetic
     runs-on: ubuntu-latest    
     steps:
-    - run: pwd
+    - run: pwd && ls && ls ../
     - run: cp /scripts/entrypoint.sh /actions/kinetic/entrypoint.sh
     - uses: actions/checkout@master
     - uses: ./actions/kinetic
