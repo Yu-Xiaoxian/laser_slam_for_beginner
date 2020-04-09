@@ -13,7 +13,7 @@
 # limitations under the License.
 FROM ros:kinetic
 
-RUN git clone https://github.com/Yu-Xiaoxian/laser_slam_for_beginner.git /sandbox
+RUN git clone https://9ac82ed8525cde6ef8d7825120e3a0509f369064:x-oauth-basic@github.com/Yu-Xiaoxian/laser_slam_for_beginner.git /sandbox
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
