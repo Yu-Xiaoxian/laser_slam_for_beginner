@@ -14,8 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-./opt/ros/kinetic/setup.sh
-
+# add ROS enviroment variables
 source "/opt/ros/kinetic/setup.bash"
 
 cd catkin_ws
