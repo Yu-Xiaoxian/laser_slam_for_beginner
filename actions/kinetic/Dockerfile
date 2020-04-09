@@ -14,6 +14,6 @@
 
 FROM ros:kinetic
 
-ADD entrypoint.sh /entrypoint.sh
+ADD scripts/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
